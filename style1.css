@@ -4,15 +4,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-} 
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Header */
+/* Apply to the entire page */
+    body {
+
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+   
+
+
 header {
     background-color: #388e3c;
     padding: 15px;
@@ -68,22 +73,48 @@ main {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    text-align: center;
 }
 
-.auth-buttons button,
-.tab-section button {
+.auth-buttons a {
     background-color: #388e3c;
     color: white;
-    border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
+    margin: 0 10px;
 }
 
-.auth-buttons button:hover,
-.tab-section button:hover {
+.auth-buttons a:hover {
     background-color: #4caf50;
+}
+
+/* Background Image Section */
+.background-image-section {
+    height: 100vh; /* Half the viewport height */
+    background-image: url('./new\ theme.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.background-image-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.background-image-section p {
+    font-size: 16px;
+    max-width: 600px;
 }
 
 /* Footer */
